@@ -1,0 +1,13 @@
+<app-create-item></app-create-item>
+
+<form style="margin-left: 25%; margin-right: 25%;" id="Formulario" (submit)="Registro()">
+    <div class="mb-3">
+        <h3>Descripción del Problema</h3>
+        <textarea class="form-control" [(ngModel)]="item1" rows="20" name="item1" id="item1" required></textarea>
+    </div>    
+    <div style="display: flex;
+                flex-direction: column;
+                align-items: center;">
+        <button id="continue" type="submit" class="btn btn-primary" >Continuar</button>
+    </div>
+</form>

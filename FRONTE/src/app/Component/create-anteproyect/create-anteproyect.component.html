@@ -1,0 +1,20 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">REGISTRAR ANTEPROYECTO</a>
+    </div>
+</nav> 
+
+<form style="margin-left: 25%; margin-right: 25%;" (submit)="Registro()">
+    <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input type="text" [(ngModel)]="Proyecto.Nombre" name="Nombre" class="form-control" placeholder="XXXXXXXXXXXXX">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Descripción</label>
+        <textarea [(ngModel)]="Proyecto.Descripcion" name="Descripcion" class="form-control" rows="12"></textarea>
+    </div>    
+    <div>
+        <button type="submit" class="btn btn-success">Registrar</button>
+    </div>
+</form>

@@ -1,0 +1,55 @@
+<app-inicio></app-inicio>
+<br>
+<div style="margin-left:10%; margin-right:10%;">
+  <table class="table">
+    <thead>
+    <tr>
+      <th scope="col">Anteproyecto:</th>
+      <th scope="col">{{DataList.Nombre}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Descripción</th>
+      <td>{{DataList.Descripcion}}</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Items</th>
+      <th scope="col">Contenido</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Descripción del Problema</th>
+      <td>{{DataList2.DescripcionProblem}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Planteamiento del Problema</th>
+      <td>{{DataList2.PlanteamientoProblem}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Hipotesis</th>
+      <td colspan="2">{{DataList2.Hipotesis}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Objetivo General</th>
+      <td colspan="2">{{DataList2.ObjetivoGeneral}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Título</th>
+      <td colspan="2">{{DataList2.TituloTentativo}}</td>
+    </tr>
+    <tr>
+      <th scope="row">Justificación</th>
+      <td colspan="2">{{DataList2.Justificacion}}</td>
+    </tr>
+  </tbody>
+</table>
+<button type="button" class="btn btn-secondary" (click)="Editar(DataList2.id)">Corregir</button>
+</div>
